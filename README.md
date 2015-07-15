@@ -1,6 +1,6 @@
-# Ipinfodb
+# IpInfo Gem
 
-This's simple gem for (http://ipinfodb.com/)[http://ipinfodb.com/]
+This's simple gem for [http://ipinfodb.com/](http://ipinfodb.com/)
 
 ## Installation
 
@@ -19,7 +19,7 @@ Or install it yourself as:
     $ gem install ipinfo
 
 ## Usage
-Use your api key for site, you can get it (here)[http://ipinfodb.com/account.php]
+Use your api key for site, you can get it [here](http://ipinfodb.com/account.php)
 ```
 ip_info = IpInfo::API.new('<api_key>')   
 ```
