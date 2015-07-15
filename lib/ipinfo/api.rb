@@ -22,6 +22,7 @@ module IpInfo
     # ==== Example:
     #   ip_info = IpInfo::API.new('<api_key>')   
     def initialize(api_key = nil)
+      raise ApiKeyError.new("Error! Add your API key") if api_key.nil?
       self.api_key ||= api_key 
     end
     
