@@ -1,4 +1,4 @@
-module Ipinfodb
+module IpInfo
   class API
     module Request
       

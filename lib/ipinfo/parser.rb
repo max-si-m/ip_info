@@ -1,6 +1,6 @@
 require "json"
 
-module Ipinfodb
+module IpInfo
   class API
     module Parser
     	class InvalidParamsError < ArgumentError; end

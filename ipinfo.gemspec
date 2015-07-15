@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'ipinfodb/version'
+require 'ipinfo/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "ipinfodb"
-  spec.version       = Ipinfodb::VERSION
+  spec.name          = "ipinfo"
+  spec.version       = IpInfo::VERSION
   spec.authors       = ["Maxim Djuliy"]
   spec.email         = ["mak7.dj@gmail.com"]
   spec.description   = %q{API interface for http://ipinfodb.com }

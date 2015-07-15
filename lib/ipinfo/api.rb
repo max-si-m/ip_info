@@ -1,10 +1,10 @@
-require "ipinfodb"
+require "ipinfo"
 
-module Ipinfodb
+module IpInfo
   class API
     include HTTParty
-    include Ipinfodb::API::Request
-    include Ipinfodb::API::Parser
+    include IpInfo::API::Request
+    include IpInfo::API::Parser
 
     class ApiKeyError < ArgumentError; end
 
@@ -20,7 +20,7 @@ module Ipinfodb
     # * +api_key+: string of api_key 
     #
     # ==== Example:
-    #   ip_info = Ipinfodb::API.new('<api_key>')   
+    #   ip_info = IpInfo::API.new('<api_key>')   
     def initialize(api_key = nil)
       self.api_key ||= api_key 
     end
