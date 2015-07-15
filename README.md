@@ -1,6 +1,6 @@
 # Ipinfodb
 
-TODO: Write a gem description
+This's simple gem for (http://ipinfodb.com/)[http://ipinfodb.com/]
 
 ## Installation
 
@@ -19,8 +19,19 @@ Or install it yourself as:
     $ gem install ipinfo
 
 ## Usage
+Use your api key for site, you can get it (here)[http://ipinfodb.com/account.php]
+```
+ip_info = IpInfo::API.new('<api_key>')   
+```
+And use `#lookup` for geting information about *ip*:
+```
+ip_info.lookup('209.85.227.104', type: 'city', timezone: true)
+```
+or *domain*:
+```
+ip_info.lookup('devbattles.com', type: 'city', timezone: true)
+```
 
-TODO: Write usage instructions here
 
 ## Contributing
 
