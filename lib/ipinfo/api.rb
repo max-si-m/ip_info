@@ -30,10 +30,10 @@ module IpInfo
     #
     # It takes two optional arguments:
     # * +type+: can either be +:country+ (default) or +:city+
-    # * +timezone+: can either be +false+ (default) or +true+
+    # * +time_zone+: can either be +false+ (default) or +true+
     #
     # ==== Example:
-    #   ip_info.lookup('209.85.227.104', type: 'city', timezone: true)
+    #   ip_info.lookup('209.85.227.104', type: 'city', time_zone: true)
     def lookup(ip, options = {})
       query(ip, options)
     end

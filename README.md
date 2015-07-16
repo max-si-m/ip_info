@@ -29,7 +29,7 @@ ip_info = IpInfo::API.new('<api_key>')
 And use `#lookup` for geting information about *ip*:
 
 ```ruby
-ip_info.lookup('209.85.227.104', type: 'city', timezone: true)
+ip_info.lookup('209.85.227.104', type: 'city', time_zone: true)
 ```
 or *domain*:
 
