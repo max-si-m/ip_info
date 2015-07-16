@@ -34,7 +34,7 @@ ip_info.lookup('209.85.227.104', type: 'city', timezone: true)
 or *domain*:
 
 ```ruby
-ip_info.lookup('devbattles.com', type: 'city', timezone: true)
+ip_info.lookup('devbattles.com', type: 'country')
 ```
 
 
