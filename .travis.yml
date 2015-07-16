@@ -3,5 +3,3 @@ cache: bundler
 rvm:
   - 2.2.1
 script: 'bundle exec rspec'
-service_name: travis-pro
-repo_token: y86g6uNUY7A4ZiPB6ewAB2BrHTTp5kkCg

@@ -35,7 +35,6 @@ module IpInfo
     # ==== Example:
     #   ip_info.lookup('209.85.227.104', type: 'city', timezone: true)
     def lookup(ip, options = {})
-      raise ApiKeyError.new("Error! Add your API key") if self.api_key.nil?
       query(ip, options)
     end
 
