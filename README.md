@@ -1,6 +1,6 @@
 # IpInfo Gem
 
-[![Build Status](https://travis-ci.org/max-si-m/ipinfo.svg?branch=master)](https://travis-ci.org/max-si-m/ipinfo) [![Coverage Status](https://coveralls.io/repos/max-si-m/ipinfo/badge.png)](https://coveralls.io/r/max-si-m/ipinfo)
+[![Build Status](https://travis-ci.org/max-si-m/ipinfo.svg?branch=master)](https://travis-ci.org/max-si-m/ipinfo) [![Coverage Status](https://coveralls.io/repos/max-si-m/ipinfo/badge.png)](https://coveralls.io/r/max-si-m/ipinfo)[![Code Climate](https://codeclimate.com/github/max-si-m/ipinfo/badges/gpa.svg)](https://codeclimate.com/github/max-si-m/ipinfo)
 
 This's simple gem for [http://ipinfodb.com/](http://ipinfodb.com/)
 
