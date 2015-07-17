@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Maxim Djuliy"]
   spec.email         = ["mak7.dj@gmail.com"]
   spec.description   = %q{API interface for http://ipinfodb.com }
-  spec.summary       = "just for funn"
+  spec.summary       = "Using for getting information about ip"
   spec.homepage      = "https://github.com/max-si-m/ipinfodb"
   spec.license       = "MIT"
 
