@@ -1,8 +1,7 @@
 module IpInfo
   class API
     module Request
-      
-      def query data, options
+      def query data, options = {}
         ip = data.sub(/^https?\:\/\//, '').sub(/^www./,'')  
 
         type = (options[:type] == "city") ? "city" : "country" 
@@ -17,7 +16,6 @@ module IpInfo
         response = self.class.get("#{type}/", query: params)
         parse_response(response)
       end
-                   
     end
   end
 end
