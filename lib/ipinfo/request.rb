@@ -14,7 +14,7 @@ module IpInfo
         params[:format] = "json"
 
         response = self.class.get("#{type}/", query: params)
-        parse_response(response)
+        parse_response(response.parsed_response)
       end
     end
   end
