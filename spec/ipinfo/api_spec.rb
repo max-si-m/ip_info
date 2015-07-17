@@ -2,15 +2,18 @@
 require 'spec_helper'
 
 describe IpInfo::API do
-	let(:api_key) 		{ 'test api_key' }	
-	let(:ip)					{ 'devbattles.com'}
+	let(:ip) 					 { 'devbattles.com'  }
+  let(:ip_info)      { IpInfo::API.new() }
 
-  it "set api_key" do
-  	ip_info = IpInfo::API.new(api_key)
-  	expect(ip_info.api_key).to eq(api_key)
+  it "set api_key", :vcr do
+  	expect(ip_info.api_key).to eq(ENV["IP_INFO_KEY"])
   end
 
-  it "raise errors with empty api_key"  do  	
-  	expect{IpInfo::API.new(nil)}.to raise_error(ArgumentError)
+  it "raise errors with empty api_key", :vcr  do  	
+    expect{IpInfo::API.new(nil)}.to raise_error(ArgumentError)
+  end
+
+  it "check type of request", :vcr do    
+    expect(ip_info.lookup(ip)).to be_kind_of(Hash)
   end
 end

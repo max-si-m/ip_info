@@ -1,4 +1,7 @@
-require_relative '../lib/ipinfo' # Подгружаем гем
+require_relative '../lib/ipinfo' # load gem
 
-RSpec.configure do |config|
-end
+require 'dotenv'
+require 'vcr'
+require 'support/vcr'
+
+Dotenv.load

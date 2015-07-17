@@ -16,14 +16,16 @@ module IpInfo
     # Using for adding adding api_key for requests
     # API_KEY you can get from: http://ipinfodb.com/account.php
     #
+    # Api key also can be stored in environment variable ENV['IP_INFO_KEY'].
+    #
     # It takes one arguments:
     # * +api_key+: string of api_key 
     #
     # ==== Example:
-    #   ip_info = IpInfo::API.new('<api_key>')   
-    def initialize(api_key = nil)
+    #   ip_info = IpInfo::API.new()   
+    def initialize()
+      self.api_key ||= ENV['IP_INFO_KEY']
       raise ApiKeyError.new("Error! Add your API key") if api_key.nil?
-      self.api_key ||= api_key 
     end
     
     # Retreive the remote location of a given ip address.
