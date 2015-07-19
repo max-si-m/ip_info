@@ -1,6 +1,6 @@
 # IpInfo Gem
 
-[![Build Status](https://travis-ci.org/max-si-m/ipinfo.svg?branch=master)](https://travis-ci.org/max-si-m/ipinfo)
+[![Build Status](https://travis-ci.org/max-si-m/ip_info.svg?branch=master)](https://travis-ci.org/max-si-m/ip_info)
 
 Find location from an IP address. 
 This's simple gem for [http://ipinfodb.com/](http://ipinfodb.com/)
