@@ -1,8 +1,8 @@
 require "httparty"
-require "ipinfo/version"
-require "ipinfo/parser"
-require "ipinfo/request"
-require "ipinfo/api"
+require "ip_info/version"
+require "ip_info/parser"
+require "ip_info/request"
+require "ip_info/api"
 
 module IpInfo
   # Your code goes here...
