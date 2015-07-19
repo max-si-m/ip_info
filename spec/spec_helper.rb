@@ -1,4 +1,4 @@
-require_relative '../lib/ipinfo' # load gem
+require_relative '../lib/ip_info' # load gem
 
 require 'dotenv'
 require 'vcr'

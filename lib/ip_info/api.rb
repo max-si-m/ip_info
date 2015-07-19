@@ -1,4 +1,4 @@
-require "ipinfo"
+require "ip_info"
 
 module IpInfo
   class API

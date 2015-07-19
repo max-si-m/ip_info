@@ -1,10 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'ipinfo/version'
+require 'ip_info/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "ipinfo"
+  spec.name          = "ip_info"
   spec.version       = IpInfo::VERSION
   spec.authors       = ["Maxim Djuliy"]
   spec.email         = ["mak7.dj@gmail.com"]
