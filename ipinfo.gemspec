@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["mak7.dj@gmail.com"]
   spec.description   = %q{API interface for http://ipinfodb.com }
   spec.summary       = "Using for getting information about ip"
-  spec.homepage      = "https://github.com/max-si-m/ipinfodb"
+  spec.homepage      = "https://github.com/max-si-m/ip_info"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
