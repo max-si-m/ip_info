@@ -23,9 +23,8 @@ Or install it yourself as:
 
 ## Usage
 Use your api key for site, you can get it [here](http://ipinfodb.com/account.php)
-Api key also can be stored in environment variable `ENV['IP_INFO_KEY']`.
 ```ruby
-ip_info = IpInfo::API.new()   
+ip_info = IpInfo::API.new(api_key: "<YOUR_API_KEY>")
 ```
 And use `#lookup` for geting information about *ip*:
 

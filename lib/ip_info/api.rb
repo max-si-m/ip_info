@@ -12,7 +12,7 @@ module IpInfo
     format :json
 
     attr_accessor :api_key
-    
+
     # Using for adding adding api_key for requests
     # API_KEY you can get from: http://ipinfodb.com/account.php
     #
@@ -24,11 +24,11 @@ module IpInfo
     # ==== Example:
     #   ip_info = IpInfo::API.new()   
     def initialize(options = {})
-      yield self
-      
+      yield self if block_given?
+
       self.api_key ||= options.fetch(:api_key) { fail ApiKeyError.new("API key is missing.") }
     end
-    
+
     # Retreive the remote location of a given ip address.
     #
     # It takes two optional arguments:

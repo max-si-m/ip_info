@@ -1,17 +1,25 @@
 module IpInfo
   class API
     module Request
-      def query data, options = {}
+      REQUEST_TYPES = %w{city country}
+
+      def query(data, options = {})
         ip = data.sub(/^https?\:\/\//, '').sub(/^www./,'')  
 
-        type = (options[:type] == "city") ? "city" : "country" 
-        time_zone = (options[:time_zone] == true ) ? true : false
+        type = options.fetch(:type, 'country')
 
-        params = {} 
-        params[:key] = self.api_key
-        params[:ip]  = ip
-        params[:timezone] = time_zone
-        params[:format] = "json"
+        unless REQUEST_TYPES.include?(type)
+          raise ArgumentError.new("Wrong request type (available: #{REQUEST_TYPES.join(",")})")
+        end
+
+        time_zone = options.fetch(:time_zone, false)
+
+        params = {
+          key:      api_key,
+          ip:       ip,
+          timezone: time_zone,
+          format:   "json"
+        }
 
         response = self.class.get("#{type}/", query: params)
         parse_response(response.parsed_response)

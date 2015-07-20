@@ -2,7 +2,7 @@ require 'spec_helper'
 
 #using IpInfo::API instanse for access to IpInfo::Parser
 describe IpInfo::API::Parser do
-  let(:ip_info)		{ IpInfo::API.new() }
+  let(:ip_info) { IpInfo::API.new(api_key: ENV['IP_INFO_KEY']) }
 
   let(:response) do
   {

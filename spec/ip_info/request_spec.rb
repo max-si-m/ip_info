@@ -4,7 +4,7 @@ require 'spec_helper'
 describe IpInfo::API::Request do
   let(:address_url)  { 'devbattles.com'  }
   let(:address_ip) 	 { '64.233.191.255'  }
-  let(:ip_info)      { IpInfo::API.new() }
+  let(:ip_info)      { IpInfo::API.new(api_key: ENV['IP_INFO_KEY']) }
 
   context "check #query params" do
     it "must be one param" do
