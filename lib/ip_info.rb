@@ -5,5 +5,4 @@ require "ip_info/request"
 require "ip_info/api"
 
 module IpInfo
-  # Your code goes here...
 end
